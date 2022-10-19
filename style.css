@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Alumni+Sans+Collegiate+One&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Alumni+Sans+Collegiate+One&family=Antonio:wght@300&family=Roboto:wght@500&display=swap");
+@import url("./style2.css");
+
+:root {
+  --textcolor: rgb(67, 23, 23);
+  --fontfamily: "Antonio", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: rgb(67, 23, 23); */
+}
+
+#navbar {
+  height: 100vh;
+  width: 100%;
+  /* background-color: rgb(234, 171, 54); */
+  background-image: url("./assets/image/background.jpg");
+}
+
+#navbar > .navBlock {
+  width: 90%;
+  height: 20vh;
+  margin: 0 auto;
+  display: flex;
+}
+
+#navbar > .navBlock > .logoBlock {
+  height: inherit;
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logoBlock > a > i {
+  font-size: 40px;
+  color: rgb(67, 23, 23);
+}
+
+.logoBlock > h2 > a {
+  font-family: "Antonio", sans-serif;
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: rgb(67, 23, 23);
+}
+
+#navbar > .navBlock > .menuBlock {
+  width: 35%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.menuBlock > span {
+  position: absolute;
+  top: 30%;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+.menuBlock > span > a {
+  text-decoration: none;
+  color: rgb(67, 23, 23);
+  font-size: 18px;
+}
+
+#navbar > .navBlock > .menuBlock > ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 15%;
+}
+
+#navbar > .navBlock > .menuBlock > ul > li > a {
+  text-decoration: none;
+  font-size: 16px;
+  color: rgb(67, 23, 23);
+  text-transform: uppercase;
+  font-family: "Antonio", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+#navbar > .navBlock > .menuBlock > ul > li > a:hover {
+  border-bottom: 4px solid rgb(67, 23, 23);
+  padding-bottom: 5px;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+.contentBlock {
+  height: 80vh;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.contentBlock > .block1 {
+  width: 50%;
+  height: inherit;
+}
+
+.contentBlock > .block1 > .infoBlock {
+  position: absolute;
+  left: 0;
+  top: 18%;
+  text-transform: uppercase;
+  border: 2px dashed;
+  color: rgb(67, 23, 23);
+  padding: 5px 7px;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: "Antonio", sans-serif;
+}
+
+.contentBlock > .block1 > .headBlock {
+  text-transform: uppercase;
+  color: rgb(67, 23, 23);
+  font-family: "Alfa Slab One", cursive;
+  text-shadow: 3px 3px rgb(247, 236, 170);
+  font-size: 5em;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 25%;
+}
+
+.contentBlock > .block1 > .head2 {
+  text-transform: uppercase;
+  color: rgb(67, 23, 23);
+  font-family: "Alfa Slab One", cursive;
+  text-shadow: 3px 3px rgb(251, 240, 178);
+  font-size: 2em;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 47%;
+}
+
+.contentBlock > .img1 {
+  position: relative;
+  height: inherit;
+  width: 50%;
+  overflow: hidden;
+}
+
+.contentBlock > .img1 > .img2 {
+  height: 320px;
+  width: 330px;
+  position: absolute;
+  top: 27%;
+  z-index: 5;
+  left: 24%;
+}
+
+.contentBlock > .img1 > .img3 {
+  height: 400px;
+  width: 140px;
+  position: absolute;
+  top: 7%;
+  right: 5%;
+  z-index: 2;
+}
+
+.contentBlock > .img1 > .img4 {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  bottom: 25%;
+  left: 0%;
+  z-index: 2;
+}
+
+.contentBlock > .img1 > .img5 {
+  height: 470px;
+  width: 500px;
+  position: absolute;
+  top: -20%;
+  left: 11%;
+}
+
+.contentBlock > .img1 > .img6 {
+  height: 40px;
+  width: 200px;
+  position: absolute;
+  bottom: 5%;
+  right: 0%;
+}
+
+.contentBlock > .img1 > .img7 {
+  height: 50px;
+  width: 400px;
+  position: absolute;
+  bottom: 0.5%;
+  right: 13%;
+}
+
+.priceBlock {
+  height: 115px;
+  width: 115px;
+  background-color: red;
+  border-radius: 50%;
+  color: white !important;
+  position: absolute;
+  right: 33%;
+  bottom: 7%;
+  z-index: 7;
+  outline: 8px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Antonio", sans-serif;
+  border: 2px dashed white !important;
+}
+
+.priceBlock > p {
+  font-size: 39px;
+  font-weight: bold;
+  font-family: "Antonio", sans-serif;
+}
+
+/* main block ends */
+
+#gallBlock {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  /* background-color: aqua; */
+  align-items: center;
+}
+
+#gallBlock > article {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gallBlock1 {
+  width: 48.5%;
+  height: inherit;
+  position: relative;
+  border-radius: 15px;
+  background-image: url("./assets/image/burger1.jpg");
+  transition: ease-in-out 0.5s;
+}
+
+.gallBlock1:hover {
+  transform: scale(1.07);
+}
+
+.gallContent > h2 {
+  position: absolute;
+  z-index: 5;
+  top: 5%;
+  left: 5%;
+  color: white;
+  font-family: "Antonio", sans-serif;
+  text-transform: uppercase;
+}
+
+.gallContent > h1 {
+  color: white;
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  font-size: 34px;
+  font-family: "Antonio", sans-serif;
+  text-transform: uppercase;
+}
+
+.gallBlock2 {
+  width: 48.5%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gallBlock2 > .imageBlock1 {
+  height: 47%;
+  width: 100%;
+  border-radius: 15px;
+  background-image: url("./assets/image/burger4.jpg");
+  position: relative;
+  transition: ease-in-out 3s;
+}
+
+.gallBlock2 > .imageBlock1:hover {
+  transform: rotateX(360deg);
+  transition-duration: 3s;
+}
+
+.gallContent2 > h2 {
+  position: absolute;
+  z-index: 5;
+  top: 5%;
+  left: 5%;
+  color: white;
+  font-family: "Antonio", sans-serif;
+  text-transform: uppercase;
+}
+
+.gallContent2 > h1 {
+  color: white;
+  position: absolute;
+  left: 5%;
+  top: 24%;
+  font-size: 32px;
+  font-family: "Antonio", sans-serif;
+  text-transform: uppercase;
+}
+
+.gallBlock2 > .imageBlock2 {
+  height: 47%;
+  width: 100%;
+  border-radius: 15px;
+  background-image: url("./assets/image/burger5.jpg");
+  position: relative;
+}
+
+/* gallery ends */
+
+#orderBlock {
+  width: 100%;
+  height: 100vh;
+}
+
+#orderBlock > article {
+  width: 93%;
+  height: inherit;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#orderBlock > article > h2 {
+  padding: 4px;
+  background-color: rgb(234, 171, 54);
+  width: 220px;
+  height: 7%;
+  font-family: "Antonio", sans-serif;
+  text-transform: uppercase;
+  margin: 0 auto;
+  animation: anim1 5s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes anim1 {
+  0% {
+  }
+
+  50% {
+    background-color: tomato;
+    color: rgb(35, 28, 28);
+    border-radius: 10px;
+    transform: scale(1.05);
+  }
+
+  100% {
+    background-color: aquamarine;
+    color: brown;
+  }
+}
+
+#orderBlock > article > h1 {
+  text-transform: uppercase;
+  font-family: "Alfa Slab One", cursive;
+  color: rgb(67, 23, 23);
+  font-size: 2.5em;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 9%;
+  left: 31%;
+}
+
+#orderBlock > article > p {
+  color: rgb(67, 23, 23);
+  position: absolute;
+  top: 18%;
+  width: 80%;
+  font-weight: 600;
+}
+
+#orderBlock > article > .cardBlock {
+  width: 100%;
+  height: 68vh;
+  position: absolute;
+  top: 28%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#orderBlock > article > .cardBlock > .card {
+  width: 29%;
+  height: 68vh;
+  background-color: rgba(245, 245, 237, 0.902);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+  border-radius: 10px;
+}
+
+#orderBlock > article > .cardBlock > .card > .imgMain {
+  height: 62%;
+  position: absolute;
+  top: -3%;
+  /* border-radius: 20% 20% 9% 9%; */
+  /* box-shadow: 0 8px 2px -2px gray; */
+}
+
+#orderBlock > article > .cardBlock > .card > .imgShadow {
+  height: 50px;
+  width: 400px;
+  position: absolute;
+  top: 52%;
+}
+
+#orderBlock > article > .cardBlock > .card > h1 {
+  position: absolute;
+  top: 63%;
+  font-size: 1.5em;
+  font-family: "Antonio", sans-serif;
+  color: rgb(67, 23, 23);
+}
+
+#orderBlock > article > .cardBlock > .card > p {
+  font-weight: 600;
+  position: absolute;
+  bottom: 17%;
+  font-family: "Antonio", sans-serif;
+  color: rgb(67, 23, 23);
+}
+
+#orderBlock > article > .cardBlock > .card > button {
+  position: absolute;
+  bottom: 3%;
+  padding: 9px 25px;
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  font-family: "Antonio", sans-serif;
+  text-transform: uppercase;
+  animation: anim2 3s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes anim2 {
+  0% {
+  }
+
+  100% {
+    /* background-color: tomato; */
+    color: rgb(35, 28, 28);
+    border-radius: 10px;
+    transform: scale(1.04);
+  }
+}

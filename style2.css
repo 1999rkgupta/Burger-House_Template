@@ -1,0 +1,239 @@
+/* discover block */
+a {
+  text-decoration: none;
+}
+
+#discoverBlock {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+#discoverBlock > .discoverChildBlock {
+  width: 90%;
+  height: 65vh;
+  box-shadow: 10px 12px 25px grey;
+  display: flex;
+}
+
+#discoverBlock > .discoverChildBlock > .contentBlock {
+  width: 45%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  /* background-color: aquamarine; */
+  padding: 40px;
+  font-family: var(--fontfamily);
+  color: var(--textcolor);
+  overflow: auto;
+}
+
+#discoverBlock > .discoverChildBlock > .contentBlock > .head {
+  font-family: "alfa slab one", sans-serif;
+  font-size: 34px;
+  letter-spacing: 1px;
+}
+
+#discoverBlock > .discoverChildBlock > .contentBlock > h3 {
+  font-size: 25px;
+}
+
+#discoverBlock > .discoverChildBlock > .contentBlock > p {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#discoverBlock > .discoverChildBlock > .imageBlock {
+  width: 55%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#discoverBlock > .discoverChildBlock > .imageBlock > img {
+  height: 90%;
+  width: 90%;
+}
+
+/* reservation block */
+#bookingBlock {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+#bookingBlock > h3 {
+  font-family: var(--fontfamily);
+  font-size: 25px;
+  color: var(--textcolor);
+  letter-spacing: 2px;
+}
+
+#bookingBlock > h1 {
+  font-family: "Alfa Slab One", cursive;
+  color: var(--textcolor);
+  letter-spacing: 3px;
+  font-size: 3em;
+}
+
+#bookingBlock input[type="text"] {
+  width: 320px;
+  height: 50px;
+  padding: 11px;
+  border-radius: 4px;
+  border: 2px solid gray;
+  color: black;
+}
+
+#bookingBlock input[type="button"] {
+  background-color: rgb(222, 58, 58);
+  width: 320px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  font-family: "Alfa Slab One", cursive;
+  color: rgb(243, 238, 238);
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+#bookingBlock > .abt3 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 260px;
+  width: 170px;
+}
+
+#bookingBlock > .abt2 {
+  position: absolute;
+  top: 2%;
+  left: 0;
+  height: 220px;
+  width: 190px;
+}
+
+#bookingBlock > .abt1 {
+  position: absolute;
+  left: 11%;
+  top: 40%;
+  height: 330px;
+  width: 200px;
+}
+
+/* footer start */
+#footerBlock {
+  width: 100%;
+  height: 65vh;
+}
+
+#footerBlock > .footerContent {
+  width: 94%;
+  height: 90%;
+  margin: 0 auto;
+  position: relative;
+  /* display: flex; */
+}
+
+#footerBlock > .footerContent > img {
+  height: 100%;
+  width: 100%;
+  filter: brightness(35%);
+  z-index: 1;
+}
+
+#footerBlock > .footerContent > .section {
+  /* display: flex; */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+}
+
+#footerBlock > .footerContent > .section > .contentBlock {
+  width: 50%;
+  height: inherit;
+  color: white;
+  position: relative;
+}
+
+#footerBlock > .footerContent > .section > .contentBlock > a > i {
+  color: white;
+  font-size: 4em;
+  position: absolute;
+  top: 10%;
+  left: 7%;
+}
+
+#footerBlock > .footerContent > .section > .contentBlock > a > h1 {
+  font-size: 34px;
+  font-family: var(--fontfamily);
+  position: absolute;
+  top: 13%;
+  left: 20%;
+  color: white;
+}
+
+#footerBlock > .footerContent > .section > .contentBlock > .infoBlock {
+  position: absolute;
+  top: 40%;
+  left: 7%;
+  line-height: 25px;
+}
+
+#footerBlock > .footerContent > .section > .contentBlock > .copyBlock {
+  position: absolute;
+  bottom: 5%;
+  left: 7%;
+  text-transform: uppercase;
+  font-family: var(--fontfamily);
+}
+
+#footerBlock > .footerContent > .section > .contactBlock {
+  width: 50%;
+  height: inherit;
+  color: white;
+  position: relative;
+}
+
+#footerBlock > .footerContent > .section > .contactBlock > a > .locationText {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  font-family: var(--fontfamily);
+  text-transform: uppercase;
+  font-size: 18px;
+  color: white;
+}
+
+#footerBlock > .footerContent > .section > .contactBlock > a > .mailText {
+  position: absolute;
+  top: 46%;
+  left: 25%;
+  font-family: var(--fontfamily);
+  text-transform: uppercase;
+  font-size: 18px;
+  color: white;
+}
+
+#footerBlock > .footerContent > .section > .contactBlock > h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 3%;
+  right: 5%;
+  color: white;
+}
+
+#footerBlock > .footerContent > .section > .contactBlock > h3 > a {
+  color: white;
+}
